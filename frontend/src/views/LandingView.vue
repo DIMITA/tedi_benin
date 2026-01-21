@@ -61,7 +61,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-section" aria-label="Statistiques de la plateforme">
+    <section class="stats-section pt-24" aria-label="Statistiques de la plateforme">
       <div class="stats-container">
         <div class="stat-card" style="animation-delay: 0.1s">
           <div class="stat-icon stat-icon-1">
