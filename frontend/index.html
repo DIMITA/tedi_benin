@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>TEDI Bénin - Données Économiques & Territoriales | Agriculture, Immobilier, Emploi</title>
+    <meta name="title" content="TEDI Bénin - Données Économiques & Territoriales | Agriculture, Immobilier, Emploi">
+    <meta name="description" content="Plateforme de données économiques et territoriales du Bénin. Accédez aux statistiques agriculture, immobilier, emploi et business de toutes les communes béninoises. Données ouvertes pour investisseurs, chercheurs et décideurs.">
+    <meta name="keywords" content="data benin, données bénin, agriculture benin, immobilier benin, emploi benin, statistiques bénin, économie bénin, investir bénin, communes bénin, API données bénin, open data benin, territorial data benin, real estate benin, employment benin, business benin, TEDI, prix immobilier cotonou, production agricole benin, marché emploi benin">
+    <meta name="author" content="TEDI - Territorial & Economic Data Index">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="BJ">
+    <meta name="geo.placename" content="Bénin">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tedi.bj/">
+    
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#2E7D32">
+    <meta name="msapplication-TileColor" content="#2E7D32">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tedi.bj/">
+    <meta property="og:title" content="TEDI Bénin - Plateforme de Données Économiques & Territoriales">
+    <meta property="og:description" content="Accédez aux données économiques du Bénin : agriculture, immobilier, emploi, business. Statistiques détaillées par commune pour investisseurs et décideurs.">
+    <meta property="og:image" content="https://tedi.bj/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TEDI - Données économiques du Bénin">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="TEDI Bénin">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tedi.bj/">
+    <meta name="twitter:title" content="TEDI Bénin - Données Économiques & Territoriales">
+    <meta name="twitter:description" content="Plateforme de données économiques du Bénin : agriculture, immobilier, emploi, business. API ouverte pour développeurs.">
+    <meta name="twitter:image" content="https://tedi.bj/twitter-image.jpg">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    
+    <!-- Leaflet CSS with preload -->
+    <link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></noscript>
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TEDI - Territorial & Economic Data Index",
+      "alternateName": "TEDI Bénin",
+      "url": "https://tedi.bj",
+      "logo": "https://tedi.bj/logo.png",
+      "description": "Plateforme de données économiques et territoriales du Bénin",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Bénin"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TEDI Bénin",
+      "url": "https://tedi.bj",
+      "description": "Plateforme de données économiques et territoriales du Bénin",
+      "inLanguage": "fr",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://tedi.bj/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - Dataset -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Données Économiques du Bénin",
+      "description": "Base de données complète sur l'économie béninoise incluant agriculture, immobilier, emploi et business pour toutes les communes du Bénin de 2010 à 2024.",
+      "url": "https://tedi.bj",
+      "keywords": ["Bénin", "économie", "agriculture", "immobilier", "emploi", "données ouvertes", "API"],
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@type": "Organization",
+        "name": "TEDI Bénin"
+      },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Bénin"
+      },
+      "temporalCoverage": "2010/2024",
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": ["CSV", "JSON", "XLSX", "PDF", "GeoJSON"],
+        "contentUrl": "https://tedi.bj/api/v1/export"
+      }
+    }
+    </script>
+    
+    <!-- Structured Data - FAQPage for common queries -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Où trouver des données économiques sur le Bénin ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TEDI Bénin est la plateforme de référence pour accéder aux données économiques et territoriales du Bénin. Elle propose des statistiques sur l'agriculture, l'immobilier, l'emploi et le business pour toutes les communes béninoises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment obtenir les prix immobiliers au Bénin ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TEDI Bénin fournit des indices de prix immobiliers par commune, type de bien et zone géographique. Les données incluent les prix au m², les tendances du marché et le nombre de transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelles sont les statistiques agricoles disponibles pour le Bénin ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TEDI Bénin propose des données sur la production agricole, les rendements, les surfaces cultivées et les prix des principales cultures (maïs, riz, manioc, igname, coton, etc.) pour chaque commune du Bénin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment accéder à l'API de données du Bénin ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TEDI Bénin propose une API RESTful gratuite. Inscrivez-vous sur la plateforme pour obtenir une clé API et accéder aux données en temps réel dans les formats CSV, JSON, Excel, PDF et GeoJSON."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Pre-render content for SEO crawlers -->
+      <noscript>
+        <div style="padding: 40px; text-align: center; font-family: system-ui, sans-serif;">
+          <h1>TEDI Bénin - Données Économiques & Territoriales</h1>
+          <p>Plateforme de données économiques et territoriales du Bénin. Accédez aux statistiques agriculture, immobilier, emploi et business de toutes les communes béninoises.</p>
+          <h2>Nos Données</h2>
+          <ul style="list-style: none; padding: 0;">
+            <li><strong>🌾 Agriculture Bénin</strong> - Production, rendements, prix des cultures</li>
+            <li><strong>🏠 Immobilier Bénin</strong> - Prix au m², tendances du marché</li>
+            <li><strong>💼 Emploi Bénin</strong> - Taux de chômage, salaires, secteurs d'activité</li>
+            <li><strong>🏢 Business Bénin</strong> - Entreprises, densité commerciale, opportunités</li>
+          </ul>
+          <p>JavaScript est requis pour utiliser cette application. <a href="https://enable-javascript.com/fr/">Activez JavaScript</a> pour continuer.</p>
+        </div>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
