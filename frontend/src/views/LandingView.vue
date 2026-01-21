@@ -20,11 +20,8 @@
          secteurs économiques, données commerciales et indicateurs de croissance.</p>
     </div>
 
-    <!-- Hero Section with Animated Background -->
+    <!-- Hero Section -->
     <section class="hero-section" aria-label="Présentation TEDI">
-      <div class="hero-pattern"></div>
-      <div class="hero-gradient"></div>
-
       <div class="hero-content">
         <div class="hero-badge">
           <span class="badge-dot"></span>
@@ -628,47 +625,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   padding: 4rem 2rem;
   overflow: hidden;
-  background: #0066 !important;
-}
-
-.hero-pattern {
-  position: absolute;
-  inset: 0;
-  opacity: 0.08;
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 200, 150, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 40%);
-  animation: patternPulse 8s ease-in-out infinite;
-}
-
-@keyframes patternPulse {
-  0%, 100% {
-    opacity: 0.08;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.12;
-    transform: scale(1.05);
-  }
-}
-
-.hero-gradient {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at bottom right, rgba(0, 200, 150, 0.15) 0%, transparent 60%);
-  animation: gradientFloat 15s ease-in-out infinite alternate;
-}
-
-@keyframes gradientFloat {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  100% {
-    transform: translate(20px, -20px) rotate(5deg);
-  }
+  background: #008751;
 }
 
 .hero-shapes {
